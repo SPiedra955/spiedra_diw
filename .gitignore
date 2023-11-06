@@ -1,2 +1,5 @@
-*.node_modules
+*node_modules/
 kittens/node_modules/
+kittens_webpack/node_modules/
+.vscode/
+actividades_clase/
