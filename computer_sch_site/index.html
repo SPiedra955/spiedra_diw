@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIW</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="/manifest.json">
+  </head>
+  <body>
+    <!-- In index.html, for example: -->
+<script>
+  // Don't register the service worker
+  // until the page has fully loaded
+  window.addEventListener('load', () => {
+    // Is service worker available?
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(() => {
+        console.log('Service worker registered!');
+      }).catch((error) => {
+        console.warn('Error registering service worker:');
+        console.warn(error);
+      });
+    }
+  });
+</script>
+    <img src="imatges\logo.png" alt="logo.jpg" id="logo" />
+    <div class="header">
+      <h1 id="title">Computer School</h1>
+      <p id="p1">Best computer school ever!</p>
+    </div>
+    <ul>
+      <li><a href="google.com">LINK 1</a></li>
+      <li><a href="google.com">LINK 2</a></li>
+      <li><a href="google.com">LINK 3</a></li>
+      <li><a href="google.com">LINK 4</a></li>
+    </ul>
+    <div id="pattern"></div>
+    <div id="background"></div>
+    <div class="grades">
+      <h1 class="gradesTitol">The Grades</h1>
+      <table>
+        <tr>
+          <th>Nom</th>
+          <th>NIF</th>
+          <th>Nota</th>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>1</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Joan</td>
+          <td>2</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Lluis</td>
+          <td>3</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Pepa</td>
+          <td>4</td>
+          <td>10</td>
+        </tr>
+      </table>
+    </div>
+    <div class="imgs">
+      <table id="table2">
+        <tr id="tr2">
+          <td id="td2">
+            <img
+              src="./imatges/javascript.png"
+              alt="javascript.jpg"
+              id="imgs"
+            />Javascript
+          </td>
+          <td id="td2">
+            <img
+              src="./imatges/angular.png"
+              alt="angular.jpg"
+              id="imgs"
+            />ANGULAR
+          </td>
+          <td id="td2">
+            <img src="./imatges/php.png" alt="javascript.jpg" id="imgs" />PHP
+          </td>
+          <td id="td2">
+            <img src="./imatges/html5.png" alt="html.jpg" id="imgs" />HTML5
+          </td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <p id="pfooter">©cifpfbmoll.eu</p>
+      <div id="divfooter"><p>design of web interfaces</p></div>
+    </footer>
+  </body>
+</html>
