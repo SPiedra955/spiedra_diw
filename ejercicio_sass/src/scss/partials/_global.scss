@@ -1,0 +1,166 @@
+@use "sass:color";
+@use "sass:math";
+@use "vars";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* This CSS will print because %message-shared is extended. */
+%message-shared {
+  color: darken(white, 30%);
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  background-color: darken(#2ecc72, 25%);
+  color: lighten(#2ecc72, 25%);
+
+}
+
+.error {
+  @extend %message-shared;
+  background-color: darken(#e74c3c, 25%);
+  color: lighten(#e74c3c, 10%);
+
+}
+
+.warning {
+  @extend %message-shared;
+  background-color: darken(#f1c40f, 25%);
+  color: lighten(#f1c40f, 10%);
+}
+
+%font-shared {
+  font-size: 2em;
+}
+p,
+h4 {
+  text-align: justify;
+  background-color: lighten(#333333, 50%);
+}
+
+h1 {
+  @extend %font-shared;
+  font-size: 2em;
+}
+
+h2 {
+  @extend %font-shared;
+  font-size: 1.8em;
+}
+
+h3 {
+  @extend %font-shared;
+  font-size: 1.6em;
+}
+
+h4 {
+  @extend %font-shared;
+  font-size: 1.4em;
+}
+
+h5 {
+  @extend %font-shared;
+  font-size: 1.2em;
+}
+
+h6 {
+  @extend %font-shared;
+  font-size: 1em;
+}
+
+table {
+  border: solid 1px black;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: solid 1px black;
+  border-collapse: collapse;
+  width: 33%;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+@mixin custom-color($r, $g, $b, $bgR, $bgG, $bgB) {
+  $colorR: math.div($r, 10);
+  $colorG: math.div($g, 10);
+  $colorB: math.div($b, 10);
+  $backgR: math.div($bgR, 10);
+  $backgG: math.div($bgG, 10);
+  $backgB: math.div($bgB, 10);
+  $className: (".color-#{$r}-#{$g}-#{$b}.colorbg-#{$bgR}-#{$bgG}-#{$bgB}");
+  #{$className} {
+    color: rgb($colorR * 25.5, $colorG * 25.5, $colorB * 25.5);
+    background-color: rgb($backgR * 25.5, $backgG * 25.5, $backgB * 25.5);
+  }
+}
+
+@include custom-color($colR, $colG, $colB, $bgcolR, $bgcolG, $bgcolB);
+@include custom-color($colR2, $colG2, $colB2, $bgcolR2, $bgcolG2, $bgcolB2);
+@include custom-color($colR3, $colG3, $colB3, $bgcolR3, $bgcolG3, $bgcolB3);
+@include custom-color($colR4, $colG4, $colB4, $bgcolR4, $bgcolG4, $bgcolB4);
+
+@mixin vendor($property, $value) {
+  -webkit-#{$property}: #{$value}; // libreria de Chrome
+  -moz-#{$property}: #{$value}; // libreria de Mozilla
+  -ms-#{$property}: #{$value}; // Microsoft Edge
+  -o-#{$property}: #{$value}; // Opera
+  #{$property}: #{$value};
+}
+
+img {
+  @include vendor(border-radius, 45%);
+  @include vendor(height, auto);
+  @include vendor(width, 300px);
+}
+
+.grayscale,
+.blur,
+.sepia,
+.invert,
+.brightness,
+.hue-rotate,
+.contrast {
+  @extend img;
+}
+
+.grayscale {
+  // @extend img;
+  filter: grayscale(100%);
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(150deg) invert(0.1);
+}
+
+.invert {
+  filter: invert(0.5);
+}
+
+.brightness {
+  filter: brightness(1);
+}
+
+.contrast {
+  filter: contrast(200%);
+}

@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* This CSS will print because %message-shared is extended. */
+.warning, .error, .success, .message {
+  color: #b3b3b3;
+}
+
+.success {
+  background-color: #176438;
+  color: #93e7b7;
+}
+
+.error {
+  background-color: #921e12;
+  color: #ed7669;
+}
+
+.warning {
+  background-color: #796307;
+  color: #f4d03f;
+}
+
+h6, h5, h4, h3, h2, h1 {
+  font-size: 2em;
+}
+
+p,
+h4 {
+  text-align: justify;
+  background-color: #b3b3b3;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+table {
+  border: solid 1px black;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: solid 1px black;
+  border-collapse: collapse;
+  width: 33%;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+.color-0-40-100.colorbg-50-100-0 {
+  color: rgb(0, 102, 255);
+  background-color: rgb(128, 255, 0);
+}
+
+.color-100-100-100.colorbg-0-0-0 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.color-50-0-0.colorbg-0-50-0 {
+  color: rgb(128, 0, 0);
+  background-color: rgb(0, 128, 0);
+}
+
+.color-70-20-10.colorbg-70-20-90 {
+  color: rgb(179, 51, 26);
+  background-color: rgb(179, 51, 230);
+}
+
+img, .grayscale,
+.blur,
+.sepia,
+.invert,
+.brightness,
+.hue-rotate,
+.contrast {
+  -webkit-border-radius: 45%;
+  -moz-border-radius: 45%;
+  -ms-border-radius: 45%;
+  -o-border-radius: 45%;
+  border-radius: 45%;
+  -webkit-height: auto;
+  -moz-height: auto;
+  -ms-height: auto;
+  -o-height: auto;
+  height: auto;
+  -webkit-width: 300px;
+  -moz-width: 300px;
+  -ms-width: 300px;
+  -o-width: 300px;
+  width: 300px;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.sepia {
+  filter: sepia(100%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(150deg) invert(0.1);
+}
+
+.invert {
+  filter: invert(0.5);
+}
+
+.brightness {
+  filter: brightness(1);
+}
+
+.contrast {
+  filter: contrast(200%);
+}

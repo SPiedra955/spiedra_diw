@@ -1,0 +1,31 @@
+@use "@material/card";
+
+.container{
+  overflow: auto;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+
+  .kittens {
+    border-radius: $border-radius;
+    margin-bottom: 2em;
+    text-align: center;
+    width: $kitten-width;
+    margin: 0 10px;
+
+    flex: 0 0 auto;
+
+    img {
+      border: $border-width solid $white;
+      border-radius: $border-radius;
+    }
+
+    label { 
+      font-weight: bold; 
+    }
+  }
+}

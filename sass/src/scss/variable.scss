@@ -1,0 +1,38 @@
+$num_columnas : 12;
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+$width_col : calc(100% / 8);
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+nav{
+
+    width: 150px;
+
+    ul{
+        list-style: none;
+    }
+
+    li{
+        font-size: 10px;
+
+        a{
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+
+}
+
+
+
+@for $i from 1 through $num_columnas {
+  .col-#{$i}{
+      float: left;
+      width: $width_col * $i;
+      padding: 15px;
+    }
+  }

@@ -1,0 +1,90 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+nav {
+  width: 150px;
+}
+nav ul {
+  list-style: none;
+}
+nav li {
+  font-size: 10px;
+}
+nav li a {
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.col-1 {
+  float: left;
+  width: 12.5%;
+  padding: 15px;
+}
+
+.col-2 {
+  float: left;
+  width: 25%;
+  padding: 15px;
+}
+
+.col-3 {
+  float: left;
+  width: 37.5%;
+  padding: 15px;
+}
+
+.col-4 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.col-5 {
+  float: left;
+  width: 62.5%;
+  padding: 15px;
+}
+
+.col-6 {
+  float: left;
+  width: 75%;
+  padding: 15px;
+}
+
+.col-7 {
+  float: left;
+  width: 87.5%;
+  padding: 15px;
+}
+
+.col-8 {
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+
+.col-9 {
+  float: left;
+  width: 112.5%;
+  padding: 15px;
+}
+
+.col-10 {
+  float: left;
+  width: 125%;
+  padding: 15px;
+}
+
+.col-11 {
+  float: left;
+  width: 137.5%;
+  padding: 15px;
+}
+
+.col-12 {
+  float: left;
+  width: 150%;
+  padding: 15px;
+}
