@@ -4,246 +4,307 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
   <title>Kittens "R" Us</title>
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 </head>
 
 <body>
-  <!--    
-    <header class="header">
-      <div class="wrapper clearfix">
-        <nav class="navigation">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="kittens.html">Kittens</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <h1></h1>
-      </div>
-    </header>
-  -->
-  <header class="mdc-top-app-bar mdc-top-app-bar--short">
+  <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <span class="mdc-top-app-bar__title">Kittens "R" Us</span>
+        <span class="mdc-top-app-bar__title">
+          <h1>Kittens "R" US</h1>
+        </span>
       </section>
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-        <div class="mdc-touch-target-wrapper">
-          <button class="mdc-button mdc-button--raised">
-            <span class="mdc-button__label">Home</span>
-          </button>
-
-          <button class="mdc-button mdc-button--raised">
-            <span class="mdc-button__label">Kittens</span>
-          </button>
-
-          <button class="mdc-button mdc-button--raised">
-            <span class="mdc-button__label">About</span>
-          </button>
-
-          <button class="mdc-button mdc-button--raised">
-            <span class="mdc-button__label">Contact</span>
-          </button>
-        </div>
       </section>
     </div>
   </header>
+  <main class="mdc-top-app-bar--fixed-adjust">
+    <div class="mdc-tab-scroller">
+      <div class="mdc-tab-scroller__scroll-area">
+        <div class="mdc-tab-scroller__scroll-content">
 
+          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__text-label">home</span>
+            </span>
+            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
 
-  <div class="content">
-    <div class="wrapper clearfix">
+          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__text-label">kittens</span>
+            </span>
+            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
+
+          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__text-label">contact</span>
+            </span>
+            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
+
+          <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+            <span class="mdc-tab__content">
+              <span class="mdc-tab__text-label">About</span>
+            </span>
+            <span class="mdc-tab-indicator mdc-tab-indicator--active">
+              <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+            </span>
+            <span class="mdc-tab__ripple"></span>
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <h1 style="text-align: left;">Newest adoptables</h1>
       <br>
-      <form class="search">
+      <form class="search" style="text-align: right; padding-top: 25px;">
         <input type="search" />
         <button>Go</button>
       </form>
-      <br>
-      <h1>Newest Adoptables</h1>
-      <br>
-      <div class="container">
+    </div>
+    </form>
 
+    <div class="kittens">
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
 
-        <div class="kittens">
-          <div class="mdc-card">
-            <div class="mdc-card__primary-action">
-              <div class="mdc-card__media-content">
-                <img class="kitten" alt="Kitten Image" />
+            <div class="mdc-card">
+              <div class="mdc-card__primary-action">
+                <div class="mdc-card__media-content">
+                  <img class="kitten" alt="Kitten Image" />
+                </div>
               </div>
-            </div>
-            <div class="mdc-card__actions">
-              <div class="mdc-card__action-buttons">
-                <button class="mdc-button mdc-card__action mdc-card__action--button">
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">
+                    <span class="mdc-button__label name"></span>
+                    &nbsp;
+                    <span class="mdc-button__label age"></span>
+                  </button>
+                </div>
+                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-button--raised">
                   <div class="mdc-button__ripple"></div>
                   <div class="button-content">
-                    <span class="name"> </span>
-                    <small class="age"></small>
+                    <span>Adopt</span>
                   </div>
                 </button>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="kittens">
-          <div class="mdc-card">
-            <div class="mdc-card__primary-action">
-              <div class="mdc-card__media-content">
-                <img class="kitten" alt="Kitten Image" />
+          </div>
+
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+
+            <div class="mdc-card">
+              <div class="mdc-card__primary-action">
+                <div class="mdc-card__media-content">
+                  <img class="kitten" alt="Kitten Image" />
+                </div>
               </div>
-            </div>
-            <div class="mdc-card__actions">
-              <div class="mdc-card__action-buttons">
-                <button class="mdc-button mdc-card__action mdc-card__action--button">
+
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">
+                    <span class="mdc-button__label name"></span>
+                    &nbsp;
+                    <span class="mdc-button__label age"></span>
+                  </button>
+                </div>
+                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-button--raised">
                   <div class="mdc-button__ripple"></div>
                   <div class="button-content">
-                    <span class="name"> </span>
-                    <small class="age"></small>
+                    <span>Adopt</span>
                   </div>
                 </button>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="kittens">
-          <div class="mdc-card">
-            <div class="mdc-card__primary-action">
-              <div class="mdc-card__media-content">
-                <img class="kitten" alt="Kitten Image" />
+          </div>
+
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+
+            <div class="mdc-card">
+              <div class="mdc-card__primary-action">
+                <div class="mdc-card__media-content">
+                  <img class="kitten" alt="Kitten Image" />
+                </div>
               </div>
-            </div>
-            <div class="mdc-card__actions">
-              <div class="mdc-card__action-buttons">
-                <button class="mdc-button mdc-card__action mdc-card__action--button">
+
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">
+                    <span class="mdc-button__label name"></span>
+                    &nbsp;
+                    <span class="mdc-button__label age"></span>
+                  </button>
+                </div>
+                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-button--raised">
                   <div class="mdc-button__ripple"></div>
                   <div class="button-content">
-                    <span class="name"> </span>
-                    <small class="age"></small>
+                    <span>Adopt</span>
                   </div>
                 </button>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="kittens">
-          <div class="mdc-card">
-            <div class="mdc-card__primary-action">
-              <div class="mdc-card__media-content">
-                <img class="kitten" alt="Kitten Image" />
+          </div>
+
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+
+            <div class="mdc-card">
+              <div class="mdc-card__primary-action">
+                <div class="mdc-card__media-content">
+                  <img class="kitten" alt="Kitten Image" />
+                </div>
               </div>
-            </div>
-            <div class="mdc-card__actions">
-              <div class="mdc-card__action-buttons">
-                <button class="mdc-button mdc-card__action mdc-card__action--button">
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">
+                    <span class="mdc-button__label name"></span>
+                    &nbsp;
+                    <span class="mdc-button__label age"></span>
+                  </button>
+                </div>
+                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-button--raised">
                   <div class="mdc-button__ripple"></div>
                   <div class="button-content">
-                    <span class="name"> </span>
-                    <small class="age"></small>
+                    <span>Adopt</span>
                   </div>
                 </button>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="kittens">
-          <div class="mdc-card">
-            <div class="mdc-card__primary-action">
-              <div class="mdc-card__media-content">
-                <img class="kitten" alt="Kitten Image" />
+          </div>
+
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+            <div class="mdc-card">
+              <div class="mdc-card__primary-action">
+                <div class="mdc-card__media-content">
+                  <img class="kitten" alt="Kitten Image" />
+                </div>
               </div>
-            </div>
-            <div class="mdc-card__actions">
-              <div class="mdc-card__action-buttons">
-                <button class="mdc-button mdc-card__action mdc-card__action--button">
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">
+                    <span class="mdc-button__label name"></span>
+                    &nbsp;
+                    <span class="mdc-button__label age"></span>
+                  </button>
+                </div>
+                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-button--raised">
                   <div class="mdc-button__ripple"></div>
                   <div class="button-content">
-                    <span class="name"> </span>
-                    <small class="age"></small>
+                    <span>Adopt</span>
                   </div>
                 </button>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="kittens">
-          <div class="mdc-card">
-            <div class="mdc-card__primary-action">
-              <div class="mdc-card__media-content">
-                <img class="kitten" alt="Kitten Image" />
+          </div>
+
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+
+            <div class="mdc-card">
+              <div class="mdc-card__primary-action">
+                <div class="mdc-card__media-content">
+                  <img class="kitten" alt="Kitten Image" />
+                </div>
               </div>
-            </div>
-            <div class="mdc-card__actions">
-              <div class="mdc-card__action-buttons">
-                <!-- Button inside the card actions with a kitten's name -->
-                <button class="mdc-button mdc-card__action mdc-card__action--button">
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">
+                    <span class="mdc-button__label name"></span>
+                    &nbsp;
+                    <span class="mdc-button__label age"></span>
+                  </button>
+                </div>
+                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-button--raised">
                   <div class="mdc-button__ripple"></div>
                   <div class="button-content">
-                    <span class="name"> </span>
-                    <small class="age"></small>
+                    <span>Adopt</span>
                   </div>
                 </button>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="kittens">
-          <div class="mdc-card">
-            <div class="mdc-card__primary-action">
-              <div class="mdc-card__media-content">
-                <img class="kitten" alt="Kitten Image" />
+          </div>
+
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+
+            <div class="mdc-card">
+              <div class="mdc-card__primary-action">
+                <div class="mdc-card__media-content">
+                  <img class="kitten" alt="Kitten Image" />
+                </div>
               </div>
-            </div>
-            <div class="mdc-card__actions">
-              <div class="mdc-card__action-buttons">
-                <button class="mdc-button mdc-card__action mdc-card__action--button">
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">
+                    <span class="mdc-button__label name"></span>
+                    &nbsp;
+                    <span class="mdc-button__label age"></span>
+                  </button>
+                </div>
+                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-button--raised">
                   <div class="mdc-button__ripple"></div>
                   <div class="button-content">
-                    <span class="name"> </span>
-                    <small class="age"></small>
+                    <span>Adopt</span>
                   </div>
                 </button>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="kittens">
-          <div class="mdc-card">
-            <div class="mdc-card__primary-action">
-              <div class="mdc-card__media-content">
-                <img class="kitten" alt="Kitten Image" />
+          </div>
+
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+
+            <div class="mdc-card">
+              <div class="mdc-card__primary-action">
+                <div class="mdc-card__media-content">
+                  <img class="kitten" alt="Kitten Image" />
+                </div>
               </div>
-            </div>
-            <div class="mdc-card__actions">
-              <div class="mdc-card__action-buttons">
-                <button class="mdc-button mdc-card__action mdc-card__action--button">
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">
+                    <span class="mdc-button__label name"></span>
+                    &nbsp;
+                    <span class="mdc-button__label age"></span>
+                  </button>
+                </div>
+                <button class="mdc-button mdc-card__action mdc-card__action--button mdc-button--raised">
                   <div class="mdc-button__ripple"></div>
                   <div class="button-content">
-                    <span class="name"> </span>
-                    <small class="age"></small>
+                    <span>Adopt</span>
                   </div>
                 </button>
               </div>
             </div>
+
           </div>
+
         </div>
-
-
       </div>
     </div>
-  </div>
-  <script src="../dist/js/all.js"></script>
-  <!--<script src="js/jquery-2.1.0.min.js"></script>-->
-  <!--<script src="js/application.js"></script>-->
+    </div>
+    <script src="../dist/js/all.js"></script>
+  </main>
 </body>
-
 </html>
