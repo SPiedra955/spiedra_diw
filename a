@@ -1,0 +1,35 @@
+[33mcommit d32ca789054b128d9f65ea03bca49d1cc7a52242[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Samuel Piedra <114516225+SPiedra955@users.noreply.github.com>
+Date:   Fri Jan 12 19:54:48 2024 +0100
+
+    updating repo
+
+[1mdiff --git a/kittens_md/material_kittens.png b/kittens_md/material_kittens.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cf8b1de[m
+Binary files /dev/null and b/kittens_md/material_kittens.png differ
+[1mdiff --git a/kittens_md/src/sass/partials/_vars.scss b/kittens_md/src/sass/partials/_vars.scss[m
+[1mdeleted file mode 100644[m
+[1mindex 1b9e50e..0000000[m
+[1m--- a/kittens_md/src/sass/partials/_vars.scss[m
+[1m+++ /dev/null[m
+[36m@@ -1,19 +0,0 @@[m
+[31m-$blue:      #506f8e;[m
+[31m-$purple:    #aea4ad;[m
+[31m-$beige:     #d9d0cb;[m
+[31m-$tan:       #eee4da;[m
+[31m-$white:     #ffffff;[m
+[31m-$blue-dark: darken($blue, 10);[m
+[31m-[m
+[31m-$base-font-family: 'Didact Gothic', sans-serif;[m
+[31m-$logo-font-family: 'Ribeye Marrow', cursive;[m
+[31m-[m
+[31m-$page-width:     1200px;[m
+[31m-$kitten-width:   $page-width, 4;[m
+[31m-$location-width: 33%;[m
+[31m-$info-width:     33%;[m
+[31m-[m
+[31m-$border-width:  10px;[m
+[31m-$border-radius: 20px;[m
+[31m-[m
+[31m-[m
