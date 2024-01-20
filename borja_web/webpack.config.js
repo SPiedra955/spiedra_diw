@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 
 module.exports = {
   mode: 'development',
@@ -11,7 +11,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-        template: './src/index.html'
+      template: './src/index.html',
     }),
   ],
   output: {
@@ -25,8 +25,17 @@ module.exports = {
         test: /\.s[ac]ss$/, // Coincide con archivos .scss y .sass
         use: [
           'style-loader', // Carga CSS en un elemento <style>
-          'css-loader',   // Convierte CSS en módulos de JavaScript
-          'sass-loader'   // Compila Sass a CSS
+          'css-loader', // Convierte CSS en módulos de JavaScript
+          {
+            // Loader for webpack to process CSS with PostCSS
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [autoprefixer],
+              },
+            },
+          },
+          'sass-loader', // Compila Sass a CSS
         ],
       },
     ],
@@ -34,6 +43,6 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, 'dist'),
     port: 8080,
-    hot: true
+    hot: true,
   },
 };
